@@ -1,0 +1,361 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #202020;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f7f2f2ce;
+}
+/* Header Navigation Styles */
+.header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: relative;
+    z-index: 1000; /* Ensure nav is above other content */
+}
+
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    display: inline-block;
+    padding: 10px 15px; /* Creates a clickable area */
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #00d1b2;
+    background: #555; /* Highlight effect */
+    border-radius: 5px; /* Optional aesthetics */
+}
+
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+}
+
+.contact-icons a img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; /* Makes icons circular */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Optional: Section Styling for Testing */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 160px; 
+    background: linear-gradient(140deg, #1a1a1a, #292929);
+}
+
+.hero .hero-content {
+    display: flex;
+    align-items: center;
+    padding-top: 22;
+}
+/* Profile Image */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 1px;
+    border-radius: 50%; /* Makes the image round */
+    overflow: hidden; /* Ensures the image stays inside the circle */
+    position: centre;
+    margin-right: 30px; /* Space between image and text */
+    box-shadow: 0 12px 25px rgba(216, 84, 13, 0.908); /* Adds a glowing frame effect */
+}
+.profile-img img {
+    width: 130%; /* Ensures the image fits the frame horizontally */
+    height: 130%;
+    padding-bottom: 90px; /* Ensures the image fits the frame vertically */
+    object-fit: cover; /* Ensures the image covers the entire circle proportionally */
+    object-position: bottom; /* Centers the image within the circle */
+}
+
+/* Background Decorative Effect */
+.profile-img::before {
+    content: '';
+    position: centre;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* Matches the round shape */
+    background: linear-gradient(135deg, rgba(0, 255, 204, 0.3), rgba(0, 128, 128, 0.3));
+    z-index: -1; /* Places it behind the image */
+    transform: scale(1.2); /* Slightly larger than the image */
+    box-shadow: 0 8px 20px rgba(0, 255, 204, 0.3);
+}
+
+/* Text Content */
+.hero .text h1 {
+    font-size: 60px;
+    color: #fcf924;
+    margin-bottom: 10px;
+}
+.hero .text p {
+    font-size: 22px;
+    color: #bbb;
+}
+
+/* General Section Styling */
+section {
+    padding: 160px;
+    text-align: center;
+    color: #fff;
+}
+section h2::before {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 3px;
+    background-color: #151212;
+    margin: 10px auto 0;
+}
+/* Section Heading Styling */
+section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fbf9f9;
+    position: relative;
+    display: inline-block;
+    font-family: 'Arial', sans-serif; /* Custom font for headings */
+}
+
+/* Decorative line under heading */
+section h2::after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 3px;
+    background-color: #151212;
+    margin: 10px auto 0;
+}
+
+/* Section Paragraph Styling */
+section p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 20px;
+    color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Section Image Styling */
+section img {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Background */
+#about {
+    background: linear-gradient(135deg, #c3c3c2, #151515);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+/* Current Learning Section Background */
+#learning {
+    background: linear-gradient(135deg, #a5754f, #a0b7d6);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+/* Goals for 2025 Section Background */
+#goals {
+    background: linear-gradient(135deg, #9cb4ce, #8a6d84);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+/* New Year Resolutions Section Background */
+#resolutions {
+    background: linear-gradient(135deg, #d4c7d4, #4c4c4a);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+/* Extra Spark Section Background */
+#extra {
+    background: linear-gradient(135deg, #9d490d, #ee0979);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for consistency across sections */
+section h2, section p {
+    z-index: 1;
+    position: relative;
+}
+
+/* Adding Decorative Shapes */
+#about::before, #learning::before, #goals::before, #resolutions::before, #extra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: url('path-to-decorative-shape.png') no-repeat center;
+    opacity: 0.2;
+}
+
+
+/* Footer */
+footer {
+    background-color: #181818;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+} 
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+footer nav ul li a:hover {
+    color: #00d1b2;
+}
+/* Extra Spark Section */
+.extra-spark {
+    background: linear-gradient(135deg, #1a1a1a, #262626);
+    color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.extra-spark h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+.timeline {
+    margin: 30px auto;
+}
+
+.timeline h3 {
+    font-size: 2rem;
+    color: #ffa500;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.timeline-item {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 255, 204, 0.8);
+}
+
+.timeline-item .time {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.fun-facts {
+    margin-top: 50px;
+}
+
+.fun-facts h3 {
+    font-size: 2rem;
+    color: #ffa500;
+}
+
+.fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fun-facts li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s;
+}
+
+.fun-facts li:hover {
+    background: #555;
+    color: #00ffcc;
+}
